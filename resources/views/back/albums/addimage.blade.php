@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
               <label for="image">Resim seç</label>
-                      <input type="file" name="image" class="input-file" ></input>
+                      <input type="file" name="image" class="input-file" required></input>
             </div>
             <button type="submit" class="btnbtn-default">Resimi Ekle!</button>
           </fieldset>

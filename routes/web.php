@@ -65,9 +65,9 @@ Route::post('/album/createalbum', 'Back\AlbumsController@postCreate')->name('cre
 Route::get('/album/deletealbum/{id}', 'Back\AlbumsController@getDelete')->name('delete_album');
 Route::get('/album/album/{id}', 'Back\AlbumsController@getAlbum')->name('show_album');
 
-Route::get('/addimage/{id}', 'Back\ImagesController@getForm')->name('add_image');
-Route::post('/addimage', 'Back\ImagesController@postAdd')->name('add_image_to_album');
-Route::get('/deleteimage/{id}', 'Back\ImagesController@getDelete')->name('delete_image');
+Route::get('/album/addimage/{id}', 'Back\ImagesController@getForm')->name('add_image');
+Route::post('/album/addimage', 'Back\ImagesController@postAdd')->name('add_image_to_album');
+Route::get('/album/deleteimage/{id}', 'Back\ImagesController@getDelete')->name('delete_image');
 
 
 });

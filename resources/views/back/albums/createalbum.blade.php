@@ -19,11 +19,11 @@
             <legend>Albümü Oluştur</legend>
             <div class="form-group">
               <label for="name">Albüm İsmi</label>
-              <input name="name" type="text" class="form-control"placeholder="Albüm İsmi Giriniz"value="{{old('name')}}">
+              <input name="name" type="text" class="form-control"placeholder="Albüm İsmi Giriniz"value="{{old('name')}}" required>
             </div>
             <div class="form-group">
               <label for="description">Albüm Açıklaması</label>
-              <textarea name="description" type="text"class="form-control" placeholder="Albüm Açıklaması Girebilirsiniz">{{old('descrption')}}</textarea>
+              <textarea name="description" type="text"class="form-control" placeholder="Albüm Açıklaması Girebilirsiniz" >{{old('descrption')}}</textarea>
             </div>
             <div class="form-group">
               <label for="cover_image">Albüm Kapak Resmi</label>
