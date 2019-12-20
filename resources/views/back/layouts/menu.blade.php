@@ -72,6 +72,20 @@
         </div>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAlbum" aria-expanded="true" aria-controls="collapseAlbum">
+          <i class="fas fa-fw fa-file-alt"></i>
+          <span>Galeri İşlemleri</span>
+        </a>
+        <div id="collapseAlbum" class="collapse" aria-labelledby="headingAlbum" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Sayfa İşlem Tipleri</h6>
+            <a class="collapse-item" href="{{route('admin.album.index')}}">Tüm Albümler</a>
+            <a class="collapse-item" href="{{route('admin.create_album_form')}}">Albüm Ekle</a>
+          </div>
+        </div>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider">
 

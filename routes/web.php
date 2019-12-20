@@ -56,6 +56,20 @@ Route::prefix('admin')->name('admin.')->middleware(['AdminMi'])->group(function(
 //admin
     Route::get('/admin/profile','Back\AdminController@index')->name('profile');
     Route::post('/admin/profile','Back\AdminController@save')->name('profile.save');
+
+
+    //AlbumsController
+Route::get('/album', 'Back\AlbumsController@getList')->name('album.index');
+Route::get('/album/createalbum', 'Back\AlbumsController@getForm')->name('create_album_form');
+Route::post('/album/createalbum', 'Back\AlbumsController@postCreate')->name('create_album');
+Route::get('/album/deletealbum/{id}', 'Back\AlbumsController@getDelete')->name('delete_album');
+Route::get('/album/album/{id}', 'Back\AlbumsController@getAlbum')->name('show_album');
+
+Route::get('/addimage/{id}', 'Back\ImagesController@getForm')->name('add_image');
+Route::post('/addimage', 'Back\ImagesController@postAdd')->name('add_image_to_album');
+Route::get('/deleteimage/{id}', 'Back\ImagesController@getDelete')->name('delete_image');
+
+
 });
 
 
