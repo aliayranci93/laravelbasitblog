@@ -14,6 +14,7 @@ class AlbumsController extends Controller
 {
   public function getList()
 {
+  
  $albums = Album::with('Photos')->get();
  return view('back.albums.index')->with('albums',$albums);
 }
